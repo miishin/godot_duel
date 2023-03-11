@@ -186,7 +186,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"death",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -232,7 +232,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"shoot",
-"speed": 5.0
+"speed": 12.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -272,8 +272,7 @@ script = ExtResource("1_y452l")
 
 [node name="sprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_oc1c1")
-animation = &"idle"
-frame_progress = 0.897917
+animation = &"walk"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 3)

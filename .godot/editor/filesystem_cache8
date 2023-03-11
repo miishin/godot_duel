@@ -1,0 +1,12 @@
+2a60927148abd1d33b818b535e306557
+::res://::1678498428
+icon.svg::CompressedTexture2D::1902208843964477332::1678249791::1678249791::1::::<><>::
+main.gd::GDScript::-1::1678426265::0::1::::<>Node2D<>::
+main.tscn::PackedScene::1473461262277420279::1678425060::0::1::::<><>::uid://b4jsrfk4r3fi5<>res://main.gd<>uid://dbf87hj5f4d3w<>uid://bfeak10gbr254
+opponent.tscn::PackedScene::2745641675340414493::1678249791::0::1::::<><>::uid://dq6pixsdc0yg7<>res://player.gd
+player.gd::GDScript::-1::1678425100::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::7241833972591463826::1678426265::0::1::::<><>::uid://dq6pixsdc0yg7<>res://player.gd
+::res://assets/::1678249791
+Atlas.png::CompressedTexture2D::4441600092755004242::1678249791::1678249791::1::::<><>::
+Font.png::CompressedTexture2D::878822813114629046::1678249791::1678249791::1::::<><>::
+Player Side Sheet.png::CompressedTexture2D::8347205536889932820::1678249791::1678249791::1::::<><>::

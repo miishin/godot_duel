@@ -14,12 +14,6 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
-
-func _input(event):
-	if event.is_action_pressed("user_input"):
-		if not moving:
-			moving = true
-			velocity = LEFT * speed
 	
 func _physics_process(delta):
 	if moving:
@@ -42,3 +36,4 @@ func fire():
 	if moving:
 		moving = false
 		velocity = Vector2(0, 0)
+		$sprite.play("shoot")
