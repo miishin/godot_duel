@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://u80xrve0veot"]
+[gd_scene load_steps=8 format=3 uid="uid://u80xrve0veot"]
 
 [ext_resource type="Texture2D" uid="uid://b4jsrfk4r3fi5" path="res://assets/Atlas.png" id="1_a2ahk"]
 [ext_resource type="Script" path="res://main.gd" id="1_jbcxk"]
 [ext_resource type="PackedScene" uid="uid://dbf87hj5f4d3w" path="res://player.tscn" id="2_ipjrx"]
 [ext_resource type="PackedScene" uid="uid://bfeak10gbr254" path="res://opponent.tscn" id="3_g1vqo"]
+[ext_resource type="Script" path="res://camera.gd" id="5_ichwl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qmj6f"]
 texture = ExtResource("1_a2ahk")
@@ -4455,3 +4456,4 @@ scale = Vector2(-1, 1)
 [node name="camera" type="Camera2D" parent="."]
 offset = Vector2(0, 30)
 zoom = Vector2(4, 4)
+script = ExtResource("5_ichwl")

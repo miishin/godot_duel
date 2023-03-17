@@ -1,4 +1,6 @@
-res://player.tscn
-res://opponent.tscn
 res://main.tscn
+res://player.gd
 res://main.gd
+res://opponent.tscn
+res://player.tscn
+res://camera.gd
