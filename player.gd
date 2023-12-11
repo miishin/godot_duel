@@ -9,9 +9,7 @@ const STOP = Vector2(0, 0)
 var direction_facing
 
 func _ready():
-	#$sprite.loop = true
 	moving = false
-	direction_facing = LEFT
 	
 func _physics_process(delta):
 	if moving:
@@ -22,12 +20,11 @@ func turn(direction):
 	$sprite.scale.x = direction.x
 	
 func move(direction):
-	turn(direction)
-		
 	velocity = direction * speed
 	moving = true
 	
 	$sprite.play("walk")
+	turn(direction)
 	
 func stop():
 	velocity = STOP
@@ -35,8 +32,7 @@ func stop():
 	
 func fire():
 	if moving:
-		moving = false
-		velocity = Vector2(0, 0)
+		stop()
 		turn(direction_facing * -1)
 		$sprite.play("shoot")
 
@@ -44,3 +40,6 @@ func die():
 	if moving:
 		stop()
 	$sprite.play("death")
+
+func default_pose():
+	$sprite.play("idle")
