@@ -20,7 +20,7 @@ var score
 
 func _ready():
 	score = 0
-	$score.text = "Score: 0"
+	$UI/score.text = "Score: 0"
 	rng = RandomNumberGenerator.new()
 	$timer.connect("timeout", _reset)
 	_reset()
@@ -45,8 +45,7 @@ func _reset():
 	
 func _process(delta):
 	if playing:
-		print($timer.time_left)
-		if rng.randf() < (-log($timer.time_left)/2) + 0.5 and opponent_alive:
+		if rng.randf() < (-log($timer.time_left)/2) + 0.75 and opponent_alive:
 			_trigger_opponent()
 
 func _input(event):
@@ -55,7 +54,7 @@ func _input(event):
 			$player.fire()
 			opponent_alive = false
 			score += int(10 - $timer.time_left)
-			$score.text = "Score: " + str(score)
+			$UI/score.text = "Score: " + str(score)
 			_end_game($opponent)
 		else:
 			playing = true
@@ -81,5 +80,5 @@ func _trigger_opponent():
 	player_alive = false
 	_end_game($player)
 	score = 0
-	$score.text = "Score: " + str(score)
+	$UI/score.text = "Score: " + str(score)
 
